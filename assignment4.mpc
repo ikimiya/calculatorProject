@@ -1,0 +1,52 @@
+// $Id: assignment4.mpc 
+
+
+project (assignment4) {
+  exename = assignment4
+  install = .
+ 
+  specific (make, gnuace) {
+    compile_flags += -std=c++11
+  }
+
+  Source_Files {
+    
+    composite_Calculator/Add_Expr_Node.cpp
+    composite_Calculator/Divide_Expr_Node.cpp
+    composite_Calculator/Mod_Expr_Node.cpp
+    composite_Calculator/Multiply_Expr_Node.cpp
+    composite_Calculator/Sub_Expr_Node.cpp
+
+    composite_Calculator/Number_Expr_Node.cpp
+    composite_Calculator/Unary_Expr_Node.cpp
+    composite_Calculator/Parenthesis_Node.cpp
+
+    composite_Calculator/Expr_Tree.cpp
+    composite_Calculator/Binary_Expr_Node.cpp
+    composite_Calculator/Calculator.cpp
+    composite_Calculator/Eval_Expr_Tree.cpp
+    composite_Calculator/Expr_Builder.cpp
+    composite_Calculator/Expr_Node_Visitor.cpp
+    composite_Calculator/Expr_Node.cpp
+    composite_Calculator/Expr_Tree_Builder.cpp
+    composite_Calculator/Print_Inorder_Expression.cpp
+
+    composite_Calculator/Node_Command_Factory.cpp
+    composite_Calculator/Stack_Node_Factory.cpp
+
+    driver.cpp
+  }
+
+    Header_Files {
+    
+    }
+
+
+  Template_Files {
+    array_Files/Basic_Array.cpp
+    array_Files/Fixed_Array.cpp
+    array_Files/Array.cpp
+    array_Files/Stack.cpp
+    array_Files/Queue.cpp
+  }
+}
